@@ -7,3 +7,9 @@ test("should see the home page", async ({ page }) => {
     "Welcome",
   );
 }); 
+
+test("should see something that can launch the quiz", async ({ page }) => {
+  await page.goto("/");
+
+  await expect(page.getByRole("button", { name: 'Start' })).toBeVisible()
+}); 

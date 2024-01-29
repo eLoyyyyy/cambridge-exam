@@ -15,7 +15,7 @@ export default function Page() {
     <Flex height='lg' justify='center' align='center'>
       <Box>
         <VStack>
-            <Heading>Welcome!</Heading>
+            <Heading as='h1'>Welcome!</Heading>
             <Text>
               We will ask you a few questions.
             </Text>
