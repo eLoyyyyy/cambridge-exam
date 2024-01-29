@@ -1,3 +1,6 @@
+import { NextApiRequest, NextApiResponse } from "next";
+import { list } from '../../questions.json'
+
 /**
  * 
  * @name Get Questions
@@ -16,3 +19,4 @@ export default function handler(
   const questions = Array.from({ length: 10 }, (_, i) => list[i])
   res.status(200).json({ questions });
 }
+ 
