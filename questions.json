@@ -1,0 +1,82 @@
+{
+    "list": [
+        {
+            "id": 1,
+            "questionText": "What have you created that you are most proud of?",
+            "questionType": "FILL_IN_THE_BLANK",
+            "weight": 3
+        },
+        {
+            "id": 2,
+            "questionText": "What's the best thing you got from one of your parents?",
+            "questionType": "MULTIPLE_CHOICE",
+            "answers": [
+                { "id": 1, "text": "A" },
+                { "id": 2, "text": "B" },
+                { "id": 3, "text": "C" },
+                { "id": 4, "text": "D" }
+            ],
+            "weight": 4
+        },
+        {
+            "id": 3,
+            "questionText": "What bends your mind every time you think about it?",
+            "questionType": "TRUE_OR_FALSE",
+            "weight": 1
+        },
+        {
+            "id": 4,
+            "questionText": "In your group of friends, what role do you play?",
+            "questionType": "SHORT_ANSWER",
+            "weight": 2
+        },
+        {
+            "id": 5,
+            "questionText": "What incredibly strong opinion do you have that is completely unimportant in the grand scheme of things?",
+            "questionType": "FILL_IN_THE_BLANK",
+            "weight": 3
+        },
+        {
+            "id": 6,
+            "questionText": "What's your favorite piece of clothing you own?",
+            "questionType": "MULTIPLE_CHOICE",
+            "answers": [
+                { "id": 1, "text": "A" },
+                { "id": 2, "text": "B" },
+                { "id": 3, "text": "C" },
+                { "id": 4, "text": "D" }
+            ],
+            "weight": 4
+        },
+        {
+            "id": 7,
+            "questionText": "What fictional place would you most like to go to?",
+            "questionType": "TRUE_OR_FALSE",
+            "weight": 1
+        },
+        {
+            "id": 8,
+            "questionText": "What's one place you've travelled that you never want to go back to?",
+            "questionType": "SHORT_ANSWER",
+            "weight": 2
+        },
+        {
+            "id": 9,
+            "questionText": "When people come to you for help, what do they usually want help with?",
+            "questionType": "FILL_IN_THE_BLANK",
+            "weight": 3
+        },
+        {
+            "id": 10,
+            "questionText": "What are you interested in that most people haven't heard of?",
+            "questionType": "MULTIPLE_CHOICE",
+            "answers": [
+                { "id": 1, "text": "A" },
+                { "id": 2, "text": "B" },
+                { "id": 3, "text": "C" },
+                { "id": 4, "text": "D" }
+            ],
+            "weight": 4
+        }
+    ]
+}
