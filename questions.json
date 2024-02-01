@@ -2,8 +2,8 @@
     "list": [
         {
             "id": 1,
-            "questionText": "What have you created that you are most proud of?",
-            "questionType": "FILL_IN_THE_BLANK",
+            "questionText": "What have you ___ that you are most proud of?",
+            "questionType": "FILL_IN_THE_BLANKS",
             "weight": 3
         },
         {
@@ -32,8 +32,8 @@
         },
         {
             "id": 5,
-            "questionText": "What incredibly strong opinion do you have that is completely unimportant in the grand scheme of things?",
-            "questionType": "FILL_IN_THE_BLANK",
+            "questionText": "What incredibly strong _____ do you have that is completely unimportant in the grand scheme of things?",
+            "questionType": "FILL_IN_THE_BLANKS",
             "weight": 3
         },
         {
@@ -62,8 +62,8 @@
         },
         {
             "id": 9,
-            "questionText": "When people come to you for help, what do they usually want help with?",
-            "questionType": "FILL_IN_THE_BLANK",
+            "questionText": "When people come to you for _____, what do they usually want help with?",
+            "questionType": "FILL_IN_THE_BLANKS",
             "weight": 3
         },
         {
