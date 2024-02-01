@@ -1,14 +1,12 @@
 import { Link } from '@chakra-ui/next-js'
 import { Box, Button, Flex, HStack, Heading, Stack, VStack, Text, SimpleGrid, Radio, RadioGroup } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 
 export default function Page() {
+  const router = useRouter()
 
   const onClick = async () => {
-    const result = await fetch('http://localhost:3000/api/questions', {
-      method: 'GET'
-    })
-
-    console.log(result)
+    router.push('/ask')
   }
   
   return (
