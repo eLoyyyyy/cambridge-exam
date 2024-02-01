@@ -1,7 +1,8 @@
-import { test } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
-test.describe('Questions screens', () => {
-    test('minimum of 10 questions', () => {
-        test.fail()
-    })
+test('minimum of 10 questions', async ({ page }) => {
+    await page.goto('/ask')
+
+    const groups = page.getByRole('group')
+    await expect(page.getByRole('group')).toHaveCount(10)
 })
