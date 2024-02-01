@@ -19,3 +19,26 @@ The prototype quiz app should include the following:
     - Reference: https://www.testandtrain.com/
   - Allows them to navigate back to the home screen.
 
+## How to run
+
+### Docker
+1. Install [Docker](https://docs.docker.com/get-docker/) on your machine.
+2. Build your container
+```
+docker build -t cambridge-exam .
+```
+3. Run your container: 
+```
+docker run -p 3000:3000 cambridge-exam
+```
+
+### Running locally
+0. Make sure you're running Node.js 20.x. You can check the `.nvmrc` for the version used for my development.
+1. Install dependencies
+```
+npm ci
+```
+2. Run the development server
+```
+npm run dev
+```
