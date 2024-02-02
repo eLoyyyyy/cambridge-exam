@@ -17,3 +17,9 @@ test('score page should have a link that can navigate back to home', async ({ pa
 
     await expect(page.getByRole('link', { name: 'Home' })).toBeVisible()
 })
+
+test('score page should have a recommendation based on score', async ({ page }) => {
+    await page.goto('/result?score=50')
+
+    await expect(page.getByLabel('recommendation')).toBeVisible()
+})
