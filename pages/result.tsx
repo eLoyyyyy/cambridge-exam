@@ -1,4 +1,5 @@
 import { Heading, VStack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function Page() {
@@ -14,6 +15,8 @@ export default function Page() {
             >
                 {query.score}
             </Heading>
+
+            <Link href='/'>Home</Link>
         </VStack>
     )
 }
