@@ -1,6 +1,7 @@
 import { useGetQuestions } from "../hooks/hooks"
-import { Heading, StackDivider, VStack } from "@chakra-ui/react"
+import { Button, Heading, StackDivider, VStack } from "@chakra-ui/react"
 import Question from "../components/Question";
+import { useRouter } from "next/router";
 
 export default function Page () {
     const {
@@ -8,6 +9,16 @@ export default function Page () {
         isError,
         data,
     } = useGetQuestions();
+    const router = useRouter();
+
+    const randomlyGenerateScore = () => {
+        const randomNum = Math.floor(Math.random() * 100) + 1
+
+        return router.push({
+            pathname: '/result',
+            query: { score: randomNum }
+        })
+    }
 
     if (isLoading) {
         return <Heading>Loading ...</Heading>
@@ -24,6 +35,11 @@ export default function Page () {
             {data.questions.map((questionProps) => (
                 <Question key={questionProps.id} {...questionProps} />
             ))}
+            <Button
+                onClick={() => randomlyGenerateScore()}
+            >
+                Submit Answers
+            </Button>
         </VStack>
     )
 }
